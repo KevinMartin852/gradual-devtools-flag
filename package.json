@@ -1,0 +1,14 @@
+{
+  "name": "gradual-devtools-flag",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/devtools_rollout.ts",
+    "test": "node --experimental-strip-types --test test/devtools_rollout.test.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
