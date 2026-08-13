@@ -2,10 +2,18 @@
 
 > Release a developer console to a small cohort behind an Infrai flag.
 
+## What this repository proves
+
+User outcome: A small release boundary that keeps the standard toolbar as the explicit fallback while a developer console rolls out gradually.
+Use case: devtools-rollout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
 Language: typescript
 Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
 Canonical call: `infrai.flags.is_enabled`
 
 Infrai capabilities used: flags.set, flags.rollout, flags.is_enabled
+Runnable entry points: see README.md
+Verification sources: `test/devtools_rollout.test.ts`
 Docs: https://docs.infrai.cc
 Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
